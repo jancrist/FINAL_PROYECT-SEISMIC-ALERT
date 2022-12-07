@@ -49,7 +49,7 @@ Data Analyst:
 Agustina Ccastillo
 Lucas Rodriguez
 
-Para este trabajo nos fuimos dividiendo las tareas asi alguien siempre tiene algo que realizar, si bien en este proceso todos realizamos practicamente todo y nos ayudamos entre si los puestos estan establecidos asi no solo por una division de tareas sino tambien de responsabilidad. Las personas nombradas estan a cargo de cada sector, por lo que si en el trabajo falta alguna parte los responsables son los destinados a realizar dicha tarea. 
+Para este trabajo nos fuimos dividiendo las tareas, si bien en este proceso todos realizamos practicamente todo y nos ayudamos entre si los puestos estan establecidos asi no solo por una division de tareas sino tambien de responsabilidad.
 
 PLANIFICACION
 Para este proceso decidimos realizar todo el proceso en Google Cloud para asi este estar atomatizado y en caso de que en la API de la cual se descargan los datos correspondientes se vayan subiendo nuevos datos de sismos, estos automaticamente se vayan incorporando a nuestro modelo y realizando todo el proceso correspondiente de manera automatizada. 
@@ -59,6 +59,7 @@ Si bien para este proceso al inicio no teniamos bien decidido como ibamos a ir t
 
 	DIAGRAMA DE FLUJO:
 
+	
 Si bien trabajando de forma local como nombramos anteriormente el proceso se ejecutaba correctamente, este no estaba automatizado por lo cual en caso de que se suban nuevos datos a la API de la cual se descagan los archivos, estos se iban a ver ignorados, por esta razon tuvimos que pasar todo el ambiente de produccion a una fase de desarrollo en la cual estos procesos estan todos automatizados en la nube de tal forma que en caso de subirse nuevos datos, estos automaticamente se iran actualizando y realizando el proceso de manera automatizada. 
 Explicacion De la Arquitectura Final:
 Para este trabajo como decidimos trabajar, asi como esta explicado en la imagen del diagrama de flujo la cual esta encima, los siguientes son los proceso realizados. 
