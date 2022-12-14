@@ -1,7 +1,7 @@
 # FINAL
 
 
-PROYECTO GRUPAL ALERTAS SISMICAS
+## PROYECTO GRUPAL ALERTAS SISMICAS
 
 Propuesta de trabajo
 Para este proyecto ustedes harán parte del equipo de atención de desastres del país latinoamericano de su preferencia. En este momento se encuentran trabajando en un proyecto tri-nacional en conjunto con el Estados unidos (USGS) y Japón (JMA) llamado “Working towards global standardization of seismological networks and effective communication to the civilian community.”  
@@ -37,7 +37,7 @@ Japon https://www.fdsn.org/networks/detail/JP/
 Observatorio Latinoamericano de su preferencia ***********  
 Nota: El producto final debe tener en su etapa de extraccion los datos en formato JSON o GeoJSON. Formatos de texto como CSV podrian usarse en los pasos intermedios para hacer sus test respectivos de ser necesario, pero no seran admitidos en la entrega final.  
 
-COMO FUIMOS TRABAJANDO  
+## COMO FUIMOS TRABAJANDO  
 Division de Tareas:  
 Data Engineer:  
 Jan  Rivarola  
@@ -50,13 +50,13 @@ Lucas Rodriguez
 
 Para este trabajo nos fuimos dividiendo las tareas, si bien en este proceso todos realizamos practicamente todo y nos ayudamos entre si los puestos estan establecidos asi no solo por una division de tareas sino tambien de responsabilidad.  
 
-PLANIFICACION  
+## PLANIFICACION  
 Para este proceso decidimos realizar todo el proceso en Google Cloud para asi este estar atomatizado y en caso de que en la API de la cual se descargan los datos correspondientes se vayan subiendo nuevos datos de sismos, estos automaticamente se vayan incorporando a nuestro modelo y realizando todo el proceso correspondiente de manera automatizada.   
 
-ARQUITECTURA:  
+## ARQUITECTURA:  
 Si bien para este proceso al inicio no teniamos bien decidido como ibamos a ir trabajando, esta fue la arquitectura que nos decidimos por usar. Antes de realizar el proceso posteriormente nombrado, al inicio lo realizamos simplemente de forma local, descargando los datos en Visual Studio usando Python y con una base de datos local usando MySQL.  
 
-DIAGRAMA DE FLUJO:  
+## DIAGRAMA DE FLUJO:  
 
 ![image](https://user-images.githubusercontent.com/105827215/207708238-1ad77346-a386-4a6d-a2e2-d4ca4ee5ca75.png)
 
@@ -64,7 +64,9 @@ DIAGRAMA DE FLUJO:
 Si bien trabajando de forma local como nombramos anteriormente el proceso se ejecutaba correctamente, este no estaba automatizado por lo cual en caso de que se suban nuevos datos a la API de la cual se descagan los archivos, estos se iban a ver ignorados, por esta razon tuvimos que pasar todo el ambiente de produccion a una fase de desarrollo en la cual estos procesos estan todos automatizados en la nube de tal forma que en caso de subirse nuevos datos, estos automaticamente se iran actualizando y realizando el proceso de manera automatizada.  
 Explicacion De la Arquitectura Final:  
 Para este trabajo como decidimos trabajar, asi como esta explicado en la imagen del diagrama de flujo la cual esta encima, los siguientes son los proceso realizados.  
-ETL:  
+
+## ETL:  
+
 Primero los datos son descargados de una API la cual es la siguiente: https://earthquake.usgs.gov/. Esta API es una API en la que se suben todo tipo de datos de catastrofes naturales en general pero en este caso lo unico que utilizamos son los datos de los sismos correspondientes.  
 
 Segundo estos datos los toma el motor de Vertex AI el cual es un motor el cual abre Python desde la nube con jupyter notebooks, manera muy parecida a la trabajada de manera local con Visual Studio pero en este caso de manera automatizada y on cloud.  
@@ -75,7 +77,7 @@ Ademas se realiza un borrado de aquellos valores faltantes, y se toman solo aque
 
 Tambien para este proceso se analizo muy bien los datos de cada columna ya que no teniamos mucho conocimiento sobre sismos por lo cual no sabiamos muy bien que realizar con estos datos.  
 
-Los Datos de estas son los siguientes:  
+## Los Datos de estas son los siguientes:  
 
 -Gap: O brecha sísmica: zona geológica en la que no ha ocurrido un sismo fuerte durante un periodo prolongado de tiempo.  
 -Nst : El número total de estaciones sísmicas utilizadas para determinar la ubicación del terremoto.  
@@ -89,7 +91,7 @@ MW: Magnitud de Momento.
 MS: Magnitud de Ondas superficiales.  
 MB: Magnitud de ondas de cuerpo.  
 
-Las columnas borradas en este proceso son las siguientes:  
+## Las columnas borradas en este proceso son las siguientes:  
 -Status: estado si revisado/ manual u automático. No nos sirve para nuestro modelo.  
 -Location source: misma información en latitud/longitud.  
 -Mag source: misma razón que la anterior.  
@@ -101,7 +103,7 @@ Las columnas borradas en este proceso son las siguientes:
 -magError: misma razón anterior.  
 -net: información confusa.  
 
-MACHINE LEARNING:  
+## MACHINE LEARNING:  
 Para este proceso se realizo un modelo predictivbo de clasificacion no supervisado, especificamente el modelo K-Mens para predecir la peligrosidad de los sismos. En este se predice el tipo de magnitud que puede llegar a tener el mismo. Considerando los diferentes tipos de magnitudes Ritcher que se ejemplifican a continuacion. En las magnitudes Ritcher se utilizan magnitudes logaritmicas, esto quiere decir que cada escala que va subiendo se multiplica por 30 el valor anterior, Esto quiere decir que por ejemplo: un sismo de magnitud 2 en la logica matematica nos diria que es el doble que un sismo de magnitud 1, pero en este caso no es asi ya uqe un sismo magnitud 2 es 30 veces superior a un sismo magnitud 1, un sismo magnitud 3 es 30 vewces superior a un sismo nivel 2 y asi cada escala que va subiendo en las magnitudes se va multiplicando por 30 la energia que libera dicho sismo.  
 
 
@@ -116,5 +118,5 @@ Grafico del agrupamiento de los datos por clusters.
 
 ![image](https://user-images.githubusercontent.com/105827215/207709107-cd5e1597-94c0-438a-954f-ed29c62aaef2.png)
 
-DATA ANALYST:  
+## DATA ANALYST:  
 Para este proceso se utilizo Power BI para realizar los dshboards de manera local y 
