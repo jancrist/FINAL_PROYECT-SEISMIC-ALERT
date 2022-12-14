@@ -57,7 +57,7 @@ Para este proceso decidimos realizar todo el proceso en Google Cloud para asi es
 ARQUITECTURA:
 Si bien para este proceso al inicio no teniamos bien decidido como ibamos a ir trabajando, esta fue la arquitectura que nos decidimos por usar. Antes de realizar el proceso posteriormente nombrado, al inicio lo realizamos simplemente de forma local, descargando los datos en Visual Studio usando Python y con una base de datos local usando MySQL. 
 
-	DIAGRAMA DE FLUJO:
+DIAGRAMA DE FLUJO:
 	<img width="251" alt="image" src="https://user-images.githubusercontent.com/105827215/207707547-5d7a5d3e-ad7f-42ca-b88c-49880c0e1a7a.png">
 	
 Si bien trabajando de forma local como nombramos anteriormente el proceso se ejecutaba correctamente, este no estaba automatizado por lo cual en caso de que se suban nuevos datos a la API de la cual se descagan los archivos, estos se iban a ver ignorados, por esta razon tuvimos que pasar todo el ambiente de produccion a una fase de desarrollo en la cual estos procesos estan todos automatizados en la nube de tal forma que en caso de subirse nuevos datos, estos automaticamente se iran actualizando y realizando el proceso de manera automatizada. 
