@@ -59,7 +59,8 @@ Si bien para este proceso al inicio no teniamos bien decidido como ibamos a ir t
 
 DIAGRAMA DE FLUJO:
 
-<img width="251" alt="image" src="https://user-images.githubusercontent.com/105827215/207707547-5d7a5d3e-ad7f-42ca-b88c-49880c0e1a7a.png">
+![image](https://user-images.githubusercontent.com/105827215/207708238-1ad77346-a386-4a6d-a2e2-d4ca4ee5ca75.png)
+
 	
 Si bien trabajando de forma local como nombramos anteriormente el proceso se ejecutaba correctamente, este no estaba automatizado por lo cual en caso de que se suban nuevos datos a la API de la cual se descagan los archivos, estos se iban a ver ignorados, por esta razon tuvimos que pasar todo el ambiente de produccion a una fase de desarrollo en la cual estos procesos estan todos automatizados en la nube de tal forma que en caso de subirse nuevos datos, estos automaticamente se iran actualizando y realizando el proceso de manera automatizada. 
 Explicacion De la Arquitectura Final:
