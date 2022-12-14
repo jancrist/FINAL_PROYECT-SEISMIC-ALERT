@@ -106,7 +106,7 @@ MACHINE LEARNING :
 Para este proceso se realizo un modelo predictivbo de clasificacion no supervisado, especificamente el modelo K-Mens para predecir la peligrosidad de los sismos. En este se predice el tipo de magnitud que puede llegar a tener el mismo. Considerando los diferentes tipos de magnitudes Ritcher que se ejemplifican a continuacion. En las magnitudes Ritcher se utilizan magnitudes logaritmicas, esto quiere decir que cada escala que va subiendo se multiplica por 30 el valor anterior, Esto quiere decir que por ejemplo: un sismo de magnitud 2 en la logica matematica nos diria que es el doble que un sismo de magnitud 1, pero en este caso no es asi ya uqe un sismo magnitud 2 es 30 veces superior a un sismo magnitud 1, un sismo magnitud 3 es 30 vewces superior a un sismo nivel 2 y asi cada escala que va subiendo en las magnitudes se va multiplicando por 30 la energia que libera dicho sismo. 
 
 
-<img width="236" alt="image" src="https://user-images.githubusercontent.com/105827215/207708055-0c151adf-4327-423f-b88e-6285dde28022.png">
+![image](https://user-images.githubusercontent.com/105827215/207708518-ab169271-6fa9-402d-af13-c5b739f39fbf.png)
 
 
 
