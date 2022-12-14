@@ -108,7 +108,7 @@ Para este proceso se realizo un modelo predictivbo de clasificacion no supervisa
 
 ![image](https://user-images.githubusercontent.com/105827215/207708518-ab169271-6fa9-402d-af13-c5b739f39fbf.png)
 
-
+![image](https://user-images.githubusercontent.com/105827215/207708752-60ceef03-e0b6-40dc-be4b-b82b4231f955.png)
 
 
 Grafico de el modelo de codo de la prediccion correspondiente.
