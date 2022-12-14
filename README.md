@@ -115,6 +115,7 @@ Grafico de el modelo de codo de la prediccion correspondiente.
 
 Grafico del agrupamiento de los datos por clusters. 
 
+![image](https://user-images.githubusercontent.com/105827215/207709107-cd5e1597-94c0-438a-954f-ed29c62aaef2.png)
 
 DATA ANALYST :
 Para este proceso se utilizo Power BI para realizar los dshboards de manera local y 
