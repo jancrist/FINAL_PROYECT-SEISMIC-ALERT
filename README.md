@@ -120,11 +120,11 @@ Grafico del agrupamiento de los datos por clusters.
 
 ## DATA ANALYST:  
 Para este proceso se utilizo Power BI para realizar los dashboards. En estos realizamos multiples dashboards ya que no simplemente trabajabamos con datos de Sismos sino tambien de catastrofes naturales en general. 
-Entre los datos mas destacados que pudimos sacar con la utilizacion y presentacion de estos dashboards fueron:
-1)Pais con mayor cantidad de desastres naturales es Estados Unidos.
-2)La catastrofe natural con mas numero de ocurrencias es la de inundaciones. 
-3)Tipo de sismo con mas ocurrencia es "Eartquake"
-4)Magnitud promedio de los sismos 2,11
+Entre los datos mas destacados que pudimos sacar con la utilizacion y presentacion de estos dashboards fueron:  
+1)Pais con mayor cantidad de desastres naturales es Estados Unidos.  
+2)La catastrofe natural con mas numero de ocurrencias es la de inundaciones.  
+3)Tipo de sismo con mas ocurrencia es "Eartquake"  
+4)Magnitud promedio de los sismos 2,11  
 ![image](https://user-images.githubusercontent.com/106763237/207767555-d4a2983b-652c-4fa4-8109-8a31e703f0f9.png)
 
 
