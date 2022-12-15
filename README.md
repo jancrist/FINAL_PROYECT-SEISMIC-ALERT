@@ -125,6 +125,8 @@ Entre los datos mas destacados que pudimos sacar con la utilizacion y presentaci
 2)La catastrofe natural con mas numero de ocurrencias es la de inundaciones.  
 3)Tipo de sismo con mas ocurrencia es "Eartquake"  
 4)Magnitud promedio de los sismos 2,11  
+  
+  
 ![image](https://user-images.githubusercontent.com/106763237/207767985-ce81ad4d-97da-404b-9ad0-325ae89c182f.png)
 
 ![image](https://user-images.githubusercontent.com/106763237/207767555-d4a2983b-652c-4fa4-8109-8a31e703f0f9.png)
